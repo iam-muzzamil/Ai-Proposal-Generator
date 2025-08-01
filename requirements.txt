@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 flask
 flask-cors
 openai
 python-dotenv
+=======
+flask
+flask-cors
+openai
+python-dotenv
+>>>>>>> 74fc07ea5efd77b7835f9ab7be4c66cca8cec472
