@@ -78,6 +78,7 @@ Avoid generic buzzwords. Keep it focused and custom.
         print("🔥 ERROR:", str(e))
         return jsonify({"error": str(e)}), 500
 
-# 🟢 Start server
+# 🟢 Start Flask server
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8080))  # Railway provides a dynamic port
+    app.run(host='0.0.0.0', port=port, debug=True)  # Bind to 0.0.0.0 for external access
